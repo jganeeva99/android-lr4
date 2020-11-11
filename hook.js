@@ -1,5 +1,6 @@
 
 
+
 Java.perform(function () {
 //2
     console.log("[*] Run instrumentation");
@@ -43,3 +44,4 @@ Java.perform(function () {
 	        count = count + 1;
 	    }
 });
+

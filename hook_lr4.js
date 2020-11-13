@@ -17,4 +17,16 @@ Java.perform(function () {
     PasswordHack.checkPassword.overload("java.lang.String").implementation = function(str){
     return true;
     }
+
+//1
+	var pinBypassFragment = Java.use("com.su.lab4.fragments.PinBypassFragment");
+	var count = 0;
+	while (true) {
+	        var pin = count.toString();
+	        if (pinBypassFragment.checkPin(pin)){
+	            console.log(pin);
+	            break;
+	        }
+	        count = count + 1;
+	    }
 });
